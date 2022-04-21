@@ -1,0 +1,13 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:4.4.6
+    environment:
+      MONGO_INITDB_DATABASE: "cpanel_dummy"
+      MONGO_INITDB_ROOT_PASSWORD: "secret"
+      MONGO_INITDB_ROOT_USERNAME: "root"
+    ports:
+      - 27019:27017
+
+volumes:
+  cpanel-dummy:
